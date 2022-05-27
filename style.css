@@ -60,34 +60,3 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: aqua;
 }
-
-.navbtn {
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-.navopen {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-}
-.navopen2 {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-}
-
-.navdiv {
-  color: white;
-  background-color: rgb(36, 143, 231);
-  position: fixed;
-  height: 100vh;
-  width: 0;
-  display: block;
-  opacity: 1;
-  top: 0;
-  right: 0;
-}
