@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Oxygen&family=Source+Sans+Pro:ital,wght@1,200&family=Spline+Sans+Mono:wght@300&family=Titillium+Web:wght@200&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stanley</title>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBG29B6dmyVuUTiMTzeZukfhSQhwV-v3y8",
+      authDomain: "portfolio-721d3.firebaseapp.com",
+      projectId: "portfolio-721d3",
+      storageBucket: "portfolio-721d3.appspot.com",
+      messagingSenderId: "504384085288",
+      appId: "1:504384085288:web:0e9d10be1615216068441d",
+      measurementId: "G-SVNGE8KXZZ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</head>
+
+<body>
+
+  <canvas id="bg"></canvas>
+
+  <main>
+    <header>
+      <h1 style="font-family: 'Oxygen', sans-serif;">Stanley</h1>
+      <p style="font-family: 'Spline Sans Mono', monospace;">Welcome to my website!</p>
+    </header>
+
+
+    <blockquote>
+      <p style="font-family: 'Source Sans Pro', sans-serif;">Random stuff I made & about me</p>
+    </blockquote>
+
+    <section class="left">
+      <h2 style="font-family: 'Titillium Web', sans-serif;">About me</h2>
+      <p style="font-family: 'Barlow', sans-serif;">
+        To be written soon.
+      </p>
+
+      <p style="font-family: 'Barlow', sans-serif;">
+        To be written soon.
+      </p>
+
+      <p style="font-family: 'Barlow', sans-serif;">
+        To be written soon.
+      </p>
+
+    </section>
+
+    <section class="light">
+      <h2 style="font-family: 'Titillium Web', sans-serif;">Projects</h2>
+
+      <p style="font-family: 'Barlow', sans-serif;">
+        So far I've been focusing on competitive programming, so not much is here yet. The only public web project I've
+        made is simple website <a style="text-decoration: none; font-family: 'Barlow', sans-serif; color: aqua;"
+          href="https://iledoegzaminu.pl">iledoegzaminu.pl</a>, and well the website you are on right now. Source code
+        of all of my public projects (and some private ones) will be available on my github. I will add more significant
+        ones to this website.</p>
+    </section>
+
+
+    <section class="left" style="font-family: 'Barlow', sans-serif;">
+      <h2 style="font-family: 'Titillium Web', sans-serif;">Nothing here yet.</h2>
+      <p style="font-family: 'Barlow', sans-serif;">
+        Nothing here yet.
+      </p>
+    </section>
+    <section>
+      <h2 style="font-family: 'Titillium Web', sans-serif;">Cat photos</h2>
+      <p style="font-family: 'Barlow', sans-serif;">Due to my cats not cooperating, 3D models made using photogrammetry
+        aren't available yet. Here are some lame standard photos, also this website needs to be scrollable so the
+        animation looks good :></p>
+        
+    </section>
+
+    <a class="navopen" id="clickme">
+      <svg width="50" height="50" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="navbtn">
+        <g id="Frame 1">
+          <rect width="300" height="300" fill="" />
+          <g id="Rectangle 5">
+            <rect x="242" y="30" width="21" height="241" fill="#80FF00" fill-opacity="0.52" />
+            <rect x="242" y="30" width="21" height="241" fill="#80FF00" fill-opacity="0.52" />
+          </g>
+          <g id="Rectangle 4">
+            <rect x="191" y="30" width="21" height="241" fill="#80FF00" fill-opacity="0.52" />
+            <rect x="191" y="30" width="21" height="241" fill="#80FF00" fill-opacity="0.52" />
+          </g>
+          <g id="Rectangle 3">
+            <rect x="140" y="30" width="21" height="241" fill="#80FF00" fill-opacity="0.52" />
+            <rect x="140" y="30" width="21" height="241" fill="#80FF00" fill-opacity="0.52" />
+          </g>
+          <g id="Rectangle 2">
+            <rect x="89" y="30" width="21" height="241" fill="#80FF00" fill-opacity="0.52" />
+            <rect x="89" y="30" width="21" height="241" fill="#80FF00" fill-opacity="0.52" />
+          </g>
+          <g id="Rectangle 1">
+            <rect x="36" y="30" width="21" height="241" fill="#80FF00" fill-opacity="0.52" />
+            <rect x="36" y="30" width="21" height="241" fill="#80FF00" fill-opacity="0.52" />
+          </g>
+        </g>
+      </svg>
+    </a>
+
+
+    <div class="navdiv" id="navdivid">
+      <a class="navopen2" id="closing">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z" />
+        </svg></a>
+
+      <h1>Nothing here (yet)</h1>
+
+
+    </div>
+    <script>
+      const button = document.getElementById('clickme');
+      const navdiv = document.getElementById('navdivid');
+      const close_popup = document.getElementById('closing');
+
+
+      button.onclick = function () {
+        navdiv.style.width = '25%';
+      }
+
+      close_popup.onclick = function () {
+        navdiv.style.width = '0%';
+      }  </script>
+    <script type="module" src="/main.js"></script>
+  </main>
+</body>
+
+</html>
