@@ -41,7 +41,7 @@ scene.background = tlo;
 
 
 
-/*
+
 //helper grid
 const gridHelper = new THREE.GridHelper(100, 10);
 scene.add(gridHelper);
@@ -50,7 +50,7 @@ scene.add(gridHelper);
 const lightHelper = new THREE.PointLightHelper(point_light, 5);
 scene.add(lightHelper);
 
-*/
+
 
 //kot
 const mtlloader = new MTLLoader();
@@ -63,6 +63,22 @@ mtlloader.load('cat.mtl', function (materials) {
     object.position.z = -60;
     object.position.y = -40;
     object.rotation.x = 4.7;
+    scene.add(object);
+  });
+});
+
+//kot ciastek 
+const mtlloader2 = new MTLLoader();
+mtlloader2.load('cat_real_model/catrm.mtl', function (materials) {
+  materials.preload();
+  const objloader = new OBJLoader();
+  objloader.setMaterials(materials);
+  objloader.load('cat_real_model/catrm.obj', function (object) {
+    object.position.x = 0;
+    object.position.z = 20;
+    object.position.y = -80;
+    object.rotation.x = 4.7;
+    object.rotation.z = 1.5;
     scene.add(object);
   });
 });
