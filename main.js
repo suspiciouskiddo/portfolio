@@ -40,7 +40,7 @@ const tlo = new THREE.TextureLoader().load('tlo.jpg');
 scene.background = tlo;
 
 
-
+/*
 
 //helper grid
 const gridHelper = new THREE.GridHelper(100, 10);
@@ -50,7 +50,7 @@ scene.add(gridHelper);
 const lightHelper = new THREE.PointLightHelper(point_light, 5);
 scene.add(lightHelper);
 
-
+*/
 
 //kot
 const mtlloader = new MTLLoader();
