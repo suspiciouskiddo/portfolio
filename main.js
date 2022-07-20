@@ -5,6 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
 import { randFloat } from 'three/src/math/MathUtils';
+import { STLLoader } from 'three/examples/jsm/loaders/STLLoader'
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -82,6 +83,51 @@ mtlloader2.load('cat_real_model/catrm.mtl', function (materials) {
     scene.add(object);
   });
 });
+
+//teksty
+const txtmaterial = new THREE.MeshPhysicalMaterial({
+  color: 0xffffff,
+  metalness: 0.15,
+  roughness: 0.1,
+  opacity: 1.0,
+  transparent: true,
+  transmission: 0.5,
+  clearcoat: 1.0,
+  clearcoatRoughness: 0.25
+})
+
+const loader1 = new STLLoader();
+loader1.load(
+  'phg.stl',
+  function (geometry) {
+    const mesh = new THREE.Mesh(geometry, txtmaterial)
+    mesh.scale.set(0.1, 0.1, 0.1);
+    mesh.position.x = -20;
+    mesh.position.z = 40;
+    mesh.position.y = -10;
+    scene.add(mesh)
+  },
+  (error) => {
+    console.log(error)
+  }
+)
+const loader2 = new STLLoader();
+loader2.load(
+  'ofi.stl',
+  function (geometry) {
+    const mesh = new THREE.Mesh(geometry, txtmaterial)
+    mesh.scale.set(0.1, 0.1, 0.1);
+    mesh.position.x = -30;
+    mesh.position.z = -60;
+    mesh.position.y = 0;
+    scene.add(mesh)
+  },
+  (error) => {
+    console.log(error)
+  }
+)
+
+
 
 //kulki
 function kulki() {
